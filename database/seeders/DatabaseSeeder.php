@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
 
+        $this->call(LocationSeed::class);
         $this->call(EventTypeSeed::class);
         $this->call(EventSeeder::class);
     }
