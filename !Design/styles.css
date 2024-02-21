@@ -1,0 +1,39 @@
+:root {
+    --br: 0.3rem;
+}
+
+
+header {
+    margin: 20px 0 40px 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3;
+}
+
+.footer {
+    padding: 40px 0;
+}
+
+
+.events {
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0;
+}
+
+.uk-card {
+    border-radius: var(--br);
+}
+
+.uk-card-media-top img {
+    border-radius: var(--br) var(--br) 0 0;
+}
+
+@media (max-width: 960px) {
+    .events {
+        grid-template-columns: 1fr;
+    }
+}
