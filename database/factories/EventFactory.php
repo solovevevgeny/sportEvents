@@ -21,7 +21,8 @@ class EventFactory extends Factory
             'start_date' => '2024-03-31',
             'registration_until' => '2024-03-28',
             'description' => fake()->text(),
-            'eventtype_id' => rand(1,4)
+            'eventtype_id' => rand(1,4),
+            'location_id' => rand(1,5)
         ];
     }
 }

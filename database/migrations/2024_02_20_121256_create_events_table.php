@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text("description")->fillable();
             $table->string("image")->nullable()->default(null);
             $table->unsignedBigInteger('eventtype_id');
+            $table->unsignedBigInteger('location_id');
             $table->timestamps();
         });
     }
