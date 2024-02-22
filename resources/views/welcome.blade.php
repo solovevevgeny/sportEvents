@@ -7,7 +7,7 @@
     <title>Document</title>
 
     @viteReactRefresh
-    @vite('resources/js/index.jsx')
+    @vite('resources/js/index.jsx', 'resources/js/uikit-icons.min.js')
 
 </head>
 <body>
