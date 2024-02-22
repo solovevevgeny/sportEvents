@@ -20,3 +20,4 @@ use App\Http\Controllers\EventsController;
 // });
 
 Route::get('/events', [EventsController::class,'index'])->name('events.list');
+Route::get('/event/{id}', [EventsController::class,'show'])->name('events.show');
