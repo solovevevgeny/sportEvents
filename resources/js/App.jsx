@@ -5,15 +5,15 @@ import axios from "axios";
 
 function App() {
 
-    const [events, setEvents] = useState([]);
+    // const [events, setEvents] = useState([]);
 
-    useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/events')
-        .then((response) => {
-            const data = response.data;
-            setEvents(data);
-        });
-    },[setEvents]);
+    // useEffect(() => {
+    //     axios.get('http://127.0.0.1:8000/api/events')
+    //     .then((response) => {
+    //         const data = response.data;
+    //         setEvents(data);
+    //     });
+    // },[setEvents]);
 
     return (
         

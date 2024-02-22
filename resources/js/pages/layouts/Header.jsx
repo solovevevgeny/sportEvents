@@ -4,7 +4,7 @@ const Header = () => {
         <div className="uk-container uk-flex uk-flex-between uk-flex-middle">
             <div className="header__logo">
                <a href="/">
-                    <img src="./images/logo.svg" alt="Sport events" width="150px" />
+                    <img src="/images/logo.svg" alt="Sport events" width="150px" />
                </a>
             </div>
         
