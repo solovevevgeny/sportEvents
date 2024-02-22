@@ -4,10 +4,12 @@ import axios from "axios";
 
 
 
-const EventCard = ({title, location, type, date, img}) => {
+const EventCard = ({id, title, location, type, date, img, onClick}) => {
 
     return (
-            <div className="uk-card uk-card-default uk-card-hover">
+            <div className="uk-card uk-card-default uk-card-hover" onClick={()=>{
+                window.location = "/event/"+id
+            }}>
             <div className="uk-card-media-top">
                 <img src={img} width="" height="" alt="" />
             </div>
@@ -39,6 +41,10 @@ const Events = () => {
         });
     },[setEvents]);
 
+function toggleClick(eventId) {
+    console.log(eventId)
+}
+
 
 return (
     <div className="uk-container">
@@ -47,11 +53,13 @@ return (
                 events.map ( (item) => {
                     return (<EventCard 
                                 key={item.id} 
+                                id={item.id}
                                 title={item.title} 
                                 location={item.location.city} 
                                 type={item.event_type.title}
                                 date={item.start_date}
                                 img={item.image}
+                                onClick={toggleClick}
                             />)
                 })
             }
