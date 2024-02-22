@@ -15,7 +15,12 @@ const EventDetail = ({eventId}) => {
 },[setEvent]);
 
   return (
-    <div>EventDetail {eventId}</div>
+    <div className="uk-container">
+      <h1>{event.title}</h1>
+      <p>{event.description}</p>
+    </div>
+
+    
   )
 }
 
