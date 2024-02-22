@@ -16,6 +16,7 @@ function App() {
     },[setEvents]);
 
     return (
+        
         <div className="uk-container">
             <Events events={events}/>
         </div>
