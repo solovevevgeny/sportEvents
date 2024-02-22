@@ -2,12 +2,12 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const EventCard = ({id, title, location, type, date}) => {
+const EventCard = ({title, location, type, date, img}) => {
 
     return (
         <div className="uk-card uk-card-default uk-card-hover">
         <div className="uk-card-media-top">
-            <img src="/images/event1.jpg" width="" height="" alt="" />
+            <img src={img} width="" height="" alt="" />
         </div>
         <div className="uk-card-body">
             <div className="event-info uk-flex uk-flex-between">
@@ -36,6 +36,7 @@ return (
                         location={item.location.city} 
                         type={item.event_type.title}
                         date={item.start_date}
+                        img={item.image}
                     />)
         })
     }
