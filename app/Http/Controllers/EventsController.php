@@ -13,4 +13,11 @@ class EventsController extends Controller
         return response($events, 200);
 
     }
+
+    public function show($id) {
+        $event = Event::findOrFail($id);
+        return response($event, 200);
+    }
+
 }
+
